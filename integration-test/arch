@@ -1,0 +1,30 @@
+
++--------------+
+|Client Request|
++--------------+
+     |
+     |   [1]       +-------+
+     '------------>| Marco |
+             ,-----|       |
+             |     +-------+
+          [2]|
+             |
+             |     +------+
+             '---->| Bepo |
+             ,---->|      |
+             |     +------+
+          [3]|
+             |
+             |     +----+
+             '---->| OS |
+                   +----+
+
+1. [1], one client sends a request to Marco;
+2. [2], Marco forwards the request to Bepo(upstream).
+   If Bepo finds the resource requested by Marco, it
+   will return the resource; it does not find it,
+   it will fetch the resource from os(Original Server,
+   upstream).
+3. [3] Origin Server received the request, and it
+   send the resource to Bepo
+

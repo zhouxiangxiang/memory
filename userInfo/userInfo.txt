@@ -1,0 +1,6 @@
+
+xx : @xyz12
+
+[google account(company)]:
+    FNST.4321@#
+    ps: use chrome browser

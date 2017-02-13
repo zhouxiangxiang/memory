@@ -1,0 +1,11 @@
+curl
+-H 'Accept:*/*'
+-H 'If-Unmodifed-Since:Wed, 17 Aug 2016 06:35:59 GMT'
+-H 'If-Match:W/"672925-1471415759000"'
+-H 'Range:bytes=65536-672924'
+-H 'Pragma:getIfoFileURI.dlna.org'
+-H 'Accept-Lanuage:zh-CN'
+-H 'Accept-Encoding:gzip,deflate'
+-H 'Cache-Control:no-cache'
+
+http://www.talk915.com/student/stuqueryChildrenTeachers.action -o /dev/null  -vvv

@@ -1,0 +1,4 @@
+break main
+break HttpCacheSM::open_read(URL*, HTTPHdr*, CacheLookupHttpConfig*, long)
+break HttpCacheSM::open_write(URL*, HTTPHdr*, HTTPInfo*, long, bool, bool)
+break HttpCacheSM::do_cache_open_read()

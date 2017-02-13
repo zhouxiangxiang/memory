@@ -1,0 +1,31 @@
+
+Switching ats's parents dynamically is great, however, missing(resource) rate  will grow sharply.
+Maybe lazy switching will be a choice. Before switching, we should do preheat first.
+
++----------------------------------+
+|      +------------------------+  |
+|      |         FIND           |  |
+|      |One Better Transfer-Node|  |
+|      +------------------------+  |
+|                     |            |
+|                     v            |
+|             +-----------------+  |------------'
+|             |     PREHEAT     |  |            |
+|ACTION       |before switching |  |            |
+|             +-----------------+  |            |
+|                          |       |            |
+|                          v       |            |
+|                      +--------+  |            |
+|                      | SWITCH |  |            |
+|                      +--------+  |            |
++----------------------------------+            |
+                                                v
+    +--------+--------------------------------------+
+    |RESULT  |Now we get one better transfer-node,  |
+    |        |and the hitting rate doesn't decrease.|
+    +--------+--------------------------------------+
+
+
+
+
+Fri Nov  4 14:53:19 CST 2016

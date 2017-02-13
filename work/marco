@@ -1,0 +1,19 @@
+marco/nginx/conf/marco
+        marco.conf
+        upyun_http.conf
+        upstream.conf
+        marco_test.conf
+
+marco/nginx/app/src
+        marco_test_content.lua
+--***---
+marco/servroot/app/src
+        marco_test_content.lua
+
+
+--date: Tue Jul 19 16:25:19 CST 2016
+status:
+	marco_status_content.lua
+
+es:
+        logger.lua

@@ -1,0 +1,45 @@
+
+
+
+Tools:
+    http tools:
+
+
+
+
+
+
+
+
+
+
+simple http server
+
+                          +--------+
+        / 1. protocol     |session |
+        |                 +--------+
+        |                                         +---------------+
+        |                 .- 1. test tools  ----->| curl          |
+        |                 |                       | http(HTTPie)  |
+http   <  2. tools        |                       | wget          |
+        |                 |                       +---------------+
+        |                 |
+        |                 '-2. loading test tools +--------------+
+        |                                         | ab           |
+        |                                         | jmeter       |
+        |                                         | httperf      |
+        |                                         | bee          |
+        |                                         +--------------+
+        |                +----------------------------------+
+        \ 3. servers     |simple http server(python,c/c++)  |
+                         |nginx                             |
+                         |ats                               |
+                         |squid                             |
+                         |web crawler                       |
+                         +----------------------------------+
+
+        debug tools
+        performance testing tools
+
+        wireshark
+        tcpdump

@@ -1,0 +1,31 @@
+
+ redis:
+   +-----------------------------------+
+   | [redis_key]:                      |
+   |    marco:parents                  |
+   |                                   |
+   |    [field]:                       |
+   |         default                   |
+   +-----------------------------------+
+
+http:
+   +----------------------------------+
+   | http_header:                     |
+   |   X-Marco-Parents: [ip_list]+    |
+   +----------------------------------+
+
+
+
+
+vista: 
+        X-Marco-Parents: 1. right ip address/port
+                         2. wrong ip address/port
+
+
+bepo: 
+        paretns.config
+                1. have parents configuration  ------>  right ip address/port
+                                                        wrong  ip addresss/port
+                2. do not have parents configuration
+
+
